@@ -16,7 +16,7 @@ document.addEventListener("deviceready", () => {
   init();
 });
 
-// Se non sono su Cordova, simulo l'evento deviceready
+// Se avvio l'app dal web, simulo l'evento deviceready
 if (!!!window.cordova) {
   document.dispatchEvent(new CustomEvent("deviceready", {}));
 }
